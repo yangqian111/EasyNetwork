@@ -1,7 +1,10 @@
 # EasyNetwork
-正在维护两个SDK，两个SDK中均需要进行网络请求，但是从业务方了解到，他们不希望每次集成一个SDK，就是集成了一个大的网络库，代码量急剧上升，所以在考虑自己在SDK中封装一套网络库，精简可用，不需要引入第三方的代码，也能够大大缩减SDK的体积
 
-> 本篇文章思路来源于 http://szulctomasz.com/how-do-I-build-a-network-layer/ 非常感谢Tomasz Szulc的分享
+在国外一个小哥的博客上看到一篇关于swift封装系统网络框架的文章，这里对文章做了一个代码的实现
+
+> 原文链接 http://szulctomasz.com/how-do-I-build-a-network-layer/ 
+
+实现之后，也具体阅读了源码，基本上和作者的思路是一致的
 
 我们一步一步来实现这个网络框架，首先，我需要一个request类，来保存我每次请求的参数、请求方法、请求的API等等
 
